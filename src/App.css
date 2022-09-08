@@ -1,0 +1,222 @@
+/*App__container*/
+.App__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.App__title {
+    text-align: center;
+}
+.App__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+
+/*Card*/
+.card {
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border: 0.1rem solid #aaaa9a;
+    transition: transform 200ms ease;
+}
+
+.card__name {
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+
+
+.card__item {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: .5rem;
+    color: #aaaa9a;
+    padding-left: 1rem;
+
+}
+
+.card__span {
+    color: #000;
+    transform: translateY(-1rem);
+}
+
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/*Modal form*/
+.container {
+    display: flex;
+    flex-direction: column;;
+    margin-bottom: 2rem;
+}
+
+.App__form{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.form__none {
+    display: none;
+}
+
+.form {
+    border: 1px solid #ccc;
+    width: max-content;
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 2rem;
+    margin: 0 auto;
+    width: max-content;
+    position: relative;
+}
+
+.form__title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input {
+    border: 0;
+    outline: none;
+
+    width: 28rem;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+
+    
+}
+
+.field:focus{
+    border-color: #18A383;
+}
+
+
+.form__close {
+    position: absolute;
+    right: -0.8rem;
+    top: -1rem;
+    padding: 1.1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #3CC93F;
+    color: #000;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.form__close:hover {
+    background-color: brown;
+    color: #fff;
+}
+
+.form__btn {
+    width: min-content;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: white;
+	background-color: #3CC93F;
+    border-radius: 0.3rem;
+    display: inline-block;
+    padding: 1.5rem;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+    width: 20rem;
+
+}
+
+
+.form__btn:hover {
+    background-color: brown;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.container__btn {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+.btn {
+    width: 3rem;
+    aspect-ratio: 1;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: brown;
+}
+
+.icon:hover {
+    color: #fff;
+    
+}
+
+
+.icon {
+    color: #000;
+    font-size: 2rem;
+}
+
+
+
+.App__open {
+    text-transform: uppercase;
+    width: 12rem;
+}
